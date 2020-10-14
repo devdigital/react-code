@@ -1,0 +1,30 @@
+{
+  "name": "@react-code/core",
+  "version": "0.1.0",
+  "source": "src/index.ts",
+  "main": "dist/core.js",
+  "module": "dist/core.module.js",
+  "unpkg": "dist/core.umd.js",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devdigital/react-code.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/devdigital/react-code/tree/master/packages/core#readme",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle watch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "microbundle": "0.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
